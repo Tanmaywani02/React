@@ -305,7 +305,7 @@ function App(){
     }
 }
   return(
-    <div className=''>
+    <div className='d-flex justify-content-center'>
   <Trafficlight trafficstate={lightState}/>
   </div>
   )
