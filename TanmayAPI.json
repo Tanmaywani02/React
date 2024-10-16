@@ -1,100 +1,100 @@
 {
   "products": [
     {
-      "id":"1",
-      "pname":"Galaxy S23",
-      "category":"Phone",
-      "brand":"Samsung",
-      "model":"s23",
-      "price":200
+      "id": "1",
+      "pname": "Galaxy S23",
+      "category": "Phone",
+      "brand": "Samsung",
+      "model": "s23",
+      "price": 200
     },
     {
-      "id":"2",
-      "pname":"Inspiron 15",
-      "category":"Laptop",
-      "brand":"Dell",
-      "model":"15",
-      "price":200
+      "id": "2",
+      "pname": "Inspiron 15",
+      "category": "Laptop",
+      "brand": "Dell",
+      "model": "15",
+      "price": 200
     },
     {
-      "id":"3",
-      "pname":"OLED 65",
-      "category":"TV",
-      "brand":"LG",
-      "model":"65",
-      "price":200
+      "id": "3",
+      "pname": "OLED 65",
+      "category": "TV",
+      "brand": "LG",
+      "model": "65",
+      "price": 200
     },
     {
-      "id":"4",
-      "pname":"Galaxy Book4",
-      "category":"Laptop",
-      "brand":"Samsung",
-      "model":"4",
-      "price":200
+      "id": "4",
+      "pname": "Galaxy Book4",
+      "category": "Laptop",
+      "brand": "Samsung",
+      "model": "4",
+      "price": 200
     },
     {
-      "id":"5",
-      "pname":"OLED 41",
-      "category":"TV",
-      "brand":"LG",
-      "model":"41",
-      "price":200
+      "id": "5",
+      "pname": "OLED 41",
+      "category": "TV",
+      "brand": "LG",
+      "model": "41",
+      "price": 200
     },
     {
-      "id":"6",
-      "pname":"Probook 11",
-      "category":"Laptop",
-      "brand":"HP",
-      "model":"11",
-      "price":200
+      "id": "6",
+      "pname": "Probook 11",
+      "category": "Laptop",
+      "brand": "HP",
+      "model": "11",
+      "price": 200
     },
     {
-      "id":"7",
-      "pname":"Galaxy S24",
-      "category":"Phone",
-      "brand":"Samsung",
-      "model":"S24",
-      "price":200
+      "id": "7",
+      "pname": "Galaxy S24",
+      "category": "Phone",
+      "brand": "Samsung",
+      "model": "S24",
+      "price": 200
     },
     {
-      "id":"8",
-      "pname":"Probook 12",
-      "category":"Laptop",
-      "brand":"HP",
-      "model":"12",
-      "price":200
+      "id": "8",
+      "pname": "Probook 12",
+      "category": "Laptop",
+      "brand": "HP",
+      "model": "12",
+      "price": 200
     },
     {
-      "id":"9",
-      "pname":"DUE70",
-      "category":"TV",
-      "brand":"Samsung",
-      "model":"70",
-      "price":200
+      "id": "9",
+      "pname": "DUE70",
+      "category": "TV",
+      "brand": "Samsung",
+      "model": "70",
+      "price": 200
     },
     {
-      "id":"10",
-      "pname":"Galaxy M10",
-      "category":"Phone",
-      "brand":"Samsung",
-      "model":"M10",
-      "price":200
+      "id": "10",
+      "pname": "Galaxy M10",
+      "category": "Phone",
+      "brand": "Samsung",
+      "model": "M10",
+      "price": 200
     },
     {
-      "id":"11",
-      "pname":"DUE77",
-      "category":"TV",
-      "brand":"Samsung",
-      "model":"77",
-      "price":200
+      "id": "11",
+      "pname": "DUE77",
+      "category": "TV",
+      "brand": "Samsung",
+      "model": "77",
+      "price": 200
     },
     {
-      "id":"12",
-      "pname":"iPhone 16",
-      "category":"Phone",
-      "brand":"Apple",
-      "model":"16",
-      "price":200
+      "id": "12",
+      "pname": "iPhone 16",
+      "category": "Phone",
+      "brand": "Apple",
+      "model": "16",
+      "price": 200
     }
   ],
   "courses": [
@@ -133,6 +133,23 @@
       "course": "Frontend Advance",
       "hod": "Durgesh V",
       "fee": 2
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "cname": "Anil",
+      "amount": 200
+    },
+    {
+      "id": "3",
+      "cname": "Seeta",
+      "amount": 500
+    },
+    {
+      "id": "4",
+      "cname": "Tanmay",
+      "amount": "1112"
     }
   ]
 }

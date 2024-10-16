@@ -2,16 +2,27 @@
   color: #61dafb;
 }
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: start;
+  gap: 50px;
+}
+
 .content{
   border:1px solid black;
   height: fit-content;
   padding: 10px;
   background-color: antiquewhite;
   border-radius: 20px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  width: 350px;
+  height: 200px;
 }
 #list{
-  width: 350px;
+  height: 300px;
 }
 /* #list ol{
   display: flex;
@@ -45,13 +56,13 @@
 #edit{
   width: 300px;
 }
-button{
+/* button{
   border-radius: 20px;
   padding: 3px 15px 5px 15px;
   background-color: rgb(219, 140, 37);
   color: white; 
   margin-top: 10px;
-}
+} */
 
 .pname{
   display: -webkit-box;

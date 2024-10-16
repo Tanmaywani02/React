@@ -33,6 +33,9 @@ import UserRegistration from './UserRegistration';
 import CourseList, { AddCourse, CourseDetails, EditCourse } from './CourseList';
 import ProductList, { ProductCard } from './ProductList';
 import Trafficlight from './Trafficlight';
+import CustomerList from './CustomerList';
+import SearchComponent from './SearchComponent';
+import Initial from './Initial';
 // import EmployeeComponent from './Employees';
 // import PeopleComponent from './People';
 
@@ -286,32 +289,76 @@ import Trafficlight from './Trafficlight';
 //   </div>
 // }
 
+export const CustContext = React.createContext();
+// function App(){
+//   const [customers, setCustomers] = useState([])
+//   // const c = {}
+//   const custUrl = "http://localhost:3000/customers"
+//   useEffect(()=>{
+//     fetch(custUrl)
+//     .then(res=>res.json())
+//     .then(data=>setCustomers(data))
+//   },[customers])
+//   return(
+//     <div className='container-fluid'>
+
+//       <h1>App</h1>
+//     <CustContext.Provider value={{customers,setCustomers}}>
+      
+//       <CustomerList/>
+//     </CustContext.Provider>
+//     </div>
+//   )
+// }
+
+export const AppContext = React.createContext();
+// function App(){
+//   const [products, setProducts] = useState([]);
+//   const prodUrl = "http://localhost:3000/products"
+//   useEffect(()=>{
+//     fetch(`${prodUrl}?_limit=3`)
+//       .then(res=>res.json())
+//       .then(data=>setProducts(data))
+//   },[])
+//   return(
+//     <div className='container-fluid'>
+//       <AppContext.Provider value={{products, setProducts}}>
+//         <SearchComponent/>
+//       </AppContext.Provider>
+//     </div>
+//   )
+// }
+
+// function App(){
+//   const lightState =  {
+//     red : {
+//         duration: 2000,
+//         backgroundColor: "red",
+//         next:"yellow"
+//     },
+//     yellow: {
+//         duration: 1000,
+//         backgroundColor: "yellow",
+//         next:"green"
+//     },
+//     green: {
+//         duration: 3000,
+//         backgroundColor: "green",
+//         next:"red"
+//     }
+// }
+//   return(
+//     <div className='d-flex justify-content-center'>
+//   <Trafficlight trafficstate={lightState}/>
+//   </div>
+//   )
+// }
+
 function App(){
-  const lightState =  {
-    red : {
-        duration: 2000,
-        backgroundColor: "red",
-        next:"yellow"
-    },
-    yellow: {
-        duration: 1000,
-        backgroundColor: "yellow",
-        next:"green"
-    },
-    green: {
-        duration: 3000,
-        backgroundColor: "green",
-        next:"red"
-    }
-}
-  return(
-    <div className='d-flex justify-content-center'>
-  <Trafficlight trafficstate={lightState}/>
-  </div>
+  return (
+    <Initial/>
   )
 }
-
-
 
 export default App;
 
