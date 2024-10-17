@@ -23,9 +23,14 @@ function DynamicTrainTicket() {
 
     const remove=(index,e)=>{
         e.preventDefault();
-        let data = [...passenger]
-        data.splice(index,1)
-        setPassengers(data)
+        if(passenger.length>1){
+            let data = [...passenger]
+            data.splice(index,1)
+            setPassengers(data)
+        }
+        else{
+            alert("Atleast one passenger is required for ticket booking.")
+        }
     }
 
   return (
@@ -38,20 +43,16 @@ function DynamicTrainTicket() {
                         <input
                             type='text'
                             className='form-control'
-                            placeholder='Passenger Name'
+                            placeholder={`Passenger ${index+1}`}
                             name='name'
                             value={input.name}
                             onChange={(e)=>handleChange(index,e)}
                         />
-                        <input
-                            type='text'
-                            placeholder='Gender'
-                            className='form-control'
-                            name='gender'
-                            value={input.gender}
-                            onChange={(e)=>handleChange(index,e)}
-
-                        />
+                        <select name='gender' className='form-control' onChange={(e)=>handleChange(index, e)}>
+                            <option value="None">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
                         <input
                             type='number'
                             placeholder='Age'
@@ -61,14 +62,17 @@ function DynamicTrainTicket() {
                             onChange={(e)=>handleChange(index,e)}
 
                         />
-                        <input
-                            type='text'
-                            placeholder='Preference'
-                            className='form-control'
-                            name='preference'
-                            value={input.preference}
-                            onChange={(e)=>handleChange(index,e)}
-                        />
+                        <select name='preference' className='form-control' onChange={(e)=>handleChange(index, e)}>
+                            <option value="none">Preference</option>
+                            <option value="Side Lower">Side Lower</option>
+                            <option value="Side Upper">Side Upper</option>
+                            <option value="Lower">Lower</option>
+                            <option value="Middle">Middle</option>
+                            <option value="Upper"> Upper</option>
+                        </select>
+                        {
+
+                        }
                         <button onClick={(e)=>remove(index,e)} className='btn btn-danger'>Remove</button>
                     </div>
                 )
