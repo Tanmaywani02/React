@@ -73,7 +73,7 @@ function CustomerList() {
         return <li key={c.id}><p style={{cursor:"pointer"}} onClick={()=>handleClick(c)}>{c.cname}</p></li>
         })}
         </ol>
-        <button onClick={()=>onAddClick()}>+ Add Customer</button>
+        <button onClick={()=>onAddClick()} className='btn btn-primary'>+ Add Customer</button>
     </div>
  
         <div className='content' id='details' style={{visibility:"hidden"}}>
@@ -81,8 +81,8 @@ function CustomerList() {
                 <strong>ID:</strong> {temp.id} <br/>
                 <strong>Name:</strong> {temp.cname} <br/>
                 <strong>Amount:</strong> {temp.amount} <br/>
-                <button onClick={(e)=>deleteCust(e,temp.id)}>Delete</button> <span> </span>
-                <button onClick={(e)=>onModifyClick()}>Modify</button>
+                <button onClick={(e)=>deleteCust(e,temp.id)} className='btn btn-primary'>Delete</button> <span> </span>
+                <button onClick={(e)=>onModifyClick()} className='btn btn-primary'>Modify</button>
 
             </p>
         </div>
@@ -92,7 +92,7 @@ function CustomerList() {
                 <strong>ID:</strong> <input type='text' id='id'/> <br/>
                 <strong>Name:</strong> <input type='text' id='name'/> <br/>
                 <strong>Amount:</strong> <input type='number' id='amt'/> <br/>
-                <button onClick={(e)=>addCust(e)}>Add</button>
+                <button onClick={(e)=>addCust(e)} className='btn btn-primary'>Add</button>
             </p>
         </div>
 
@@ -100,7 +100,7 @@ function CustomerList() {
             <p>
                 <strong>Name:</strong> <input type='text' id='new_name'/> <br/>
                 <strong>Amount:</strong> <input type='number' id='new_amt'/> <br/>
-                <button onClick={(e)=>modifyCust(e,temp.id)}>Modify</button>
+                <button onClick={(e)=>modifyCust(e,temp.id)} className='btn btn-primary'>Update</button>
             </p>
         </div>
     </div>

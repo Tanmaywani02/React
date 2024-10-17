@@ -36,6 +36,8 @@ import Trafficlight from './Trafficlight';
 import CustomerList from './CustomerList';
 import SearchComponent from './SearchComponent';
 import Initial from './Initial';
+import DynamicForm from './DynamicForm';
+import DynamicTrainTicket from './DynamicTrainTicket';
 // import EmployeeComponent from './Employees';
 // import PeopleComponent from './People';
 
@@ -354,12 +356,16 @@ export const AppContext = React.createContext();
 //   )
 // }
 
+// function App(){
+//   return (
+//     <Initial/>
+//   )
+// }
 function App(){
-  return (
-    <Initial/>
-  )
+  return <div>
+    <DynamicTrainTicket/>
+  </div>
 }
-
 export default App;
 
 // function ChildComponent(){
